@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page 3 | CSS To-Do UI</title>
+  <link rel="stylesheet" href="page3.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+    <a href="page4.html">Page 4</a>
+    <a href="page5.php">Page 5</a>
+  </nav>
+
+  <main class="wrapper">
+    <h1>To-Do Interface</h1>
+    
+
+    <section class="todo-app">
+      <div class="todo-header">
+        <h2>Today's Planner</h2>
+        <span class="badge" id="taskBadge">5 Tasks</span>
+      </div>
+
+      <div class="input-row">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <button id="addTaskBtn" type="button">Add</button>
+      </div>
+
+      <ul class="todo-list" id="todoList">
+        <li class="todo-item done">
+          <input type="checkbox" class="todo-check" checked />
+          <span class="todo-text">Complete HTML registration page</span>
+        </li>
+        <li class="todo-item">
+          <input type="checkbox" class="todo-check" />
+          <span class="todo-text">Style To-Do page with CSS cards</span>
+        </li>
+        <li class="todo-item">
+          <input type="checkbox" class="todo-check" />
+          <span class="todo-text">Build calculator in JavaScript</span>
+        </li>
+        <li class="todo-item">
+          <input type="checkbox" class="todo-check" />
+          <span class="todo-text">Revise DOM manipulation concepts</span>
+        </li>
+        <li class="todo-item">
+          <input type="checkbox" class="todo-check" />
+          <span class="todo-text">Test all page navigation links</span>
+        </li>
+      </ul>
+
+      <div class="actions">
+        <button class="outline" id="clearCompletedBtn" type="button">Clear Completed</button>
+        <button class="primary" id="markAllBtn" type="button">Mark All Done</button>
+      </div>
+    </section>
+       
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <a href="page2.html" class="btn-link">Back</a>
+      <a href="page4.html" class="btn-link">Next</a>
+    </div>
+  </main>
+
+  <script src="page3.js"></script>
+</body>
+</html>

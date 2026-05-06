@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page 2 | Internship Application</title>
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="page2.html">Page 2</a> |
+      <a href="page3.html">Page 3</a> |
+      <a href="page4.html">Page 4</a> |
+      <a href="page5.php">Page 5</a>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <h1>Internship Application Form</h1>
+    
+
+    <h2>Application Instructions</h2>
+    <ul>
+      <li>Fill all required fields marked by the browser.</li>
+      <li>Use a professional email and phone number.</li>
+      <li>Upload a resume in PDF format.</li>
+    </ul>
+
+    <h2>Available Internship Tracks</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <caption><strong>Summer 2026 Internships</strong></caption>
+      <tr>
+        <th>Track</th>
+        <th>Focus</th>
+        <th>Seats</th>
+      </tr>
+      <tr>
+        <td>Frontend Development</td>
+        <td>HTML, CSS, JavaScript, UI Design</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Backend Development</td>
+        <td>APIs, Databases, Server Logic</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Full Stack</td>
+        <td>Frontend + Backend Projects</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Data & Analytics</td>
+        <td>Python, SQL, Dashboards</td>
+        <td>10</td>
+      </tr>
+    </table>
+
+    <h2>Application Details</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend><strong>Personal Details</strong></legend>
+        <table cellpadding="6" cellspacing="0">
+          <tr>
+            <td><label for="full_name">Full Name:</label></td>
+            <td><input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email Address:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="name@example.com" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" /></td>
+          </tr>
+          <tr>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" id="city" name="city" placeholder="Current city" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>Education</strong></legend>
+        <table cellpadding="6" cellspacing="0">
+          <tr>
+            <td><label for="college">College / University:</label></td>
+            <td><input type="text" id="college" name="college" placeholder="Your institution" required /></td>
+          </tr>
+          <tr>
+            <td><label for="degree">Degree:</label></td>
+            <td>
+              <select id="degree" name="degree" required>
+                <option value="">-- Select Degree --</option>
+                <option value="BTech">B.Tech</option>
+                <option value="BE">B.E.</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="Other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="department">Department:</label></td>
+            <td>
+              <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="ECE">Electronics and Communication Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="CE">Civil Engineering</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="year">Current Year:</label></td>
+            <td>
+              <select id="year" name="year" required>
+                <option value="">-- Select Year --</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cgpa">CGPA (out of 10):</label></td>
+            <td><input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01" required /></td>
+          </tr>
+          <tr>
+            <td><label for="grad_year">Expected Graduation Year:</label></td>
+            <td>
+              <select id="grad_year" name="grad_year" required>
+                <option value="">-- Select Year --</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>Internship Preferences</strong></legend>
+        <table cellpadding="6" cellspacing="0">
+          <tr>
+            <td><label for="track">Preferred Track:</label></td>
+            <td>
+              <select id="track" name="track" required>
+                <option value="">-- Select Track --</option>
+                <option value="Frontend">Frontend Development</option>
+                <option value="Backend">Backend Development</option>
+                <option value="FullStack">Full Stack</option>
+                <option value="Data">Data & Analytics</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Mode:</td>
+            <td>
+              <input type="radio" id="mode_remote" name="mode" value="Remote" required />
+              <label for="mode_remote">Remote</label>
+              <input type="radio" id="mode_hybrid" name="mode" value="Hybrid" />
+              <label for="mode_hybrid">Hybrid</label>
+              <input type="radio" id="mode_onsite" name="mode" value="Onsite" />
+              <label for="mode_onsite">On-site</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="duration">Duration:</label></td>
+            <td>
+              <select id="duration" name="duration" required>
+                <option value="">-- Select Duration --</option>
+                <option value="4">4 Weeks</option>
+                <option value="6">6 Weeks</option>
+                <option value="8">8 Weeks</option>
+                <option value="12">12 Weeks</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="start_date">Available From:</label></td>
+            <td><input type="date" id="start_date" name="start_date" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>Portfolio & Skills</strong></legend>
+        <table cellpadding="6" cellspacing="0">
+          <tr>
+            <td><label for="resume">Upload Resume (PDF):</label></td>
+            <td><input type="file" id="resume" name="resume" accept=".pdf" required /></td>
+          </tr>
+          <tr>
+            <td><label for="github">GitHub URL:</label></td>
+            <td><input type="url" id="github" name="github" placeholder="https://github.com/username" /></td>
+          </tr>
+          <tr>
+            <td><label for="portfolio">Portfolio URL:</label></td>
+            <td><input type="url" id="portfolio" name="portfolio" placeholder="https://your-portfolio.com" /></td>
+          </tr>
+          <tr>
+            <td><label for="skills">Primary Skill:</label></td>
+            <td>
+              <input type="text" id="skills" name="skills" list="skills_list" placeholder="e.g., HTML, Python" required />
+              <datalist id="skills_list">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="SQL"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>Tools Known:</td>
+            <td>
+              <input type="checkbox" id="tool_git" name="tools[]" value="Git" />
+              <label for="tool_git">Git</label>
+              <input type="checkbox" id="tool_vscode" name="tools[]" value="VSCode" />
+              <label for="tool_vscode">VS Code</label>
+              <input type="checkbox" id="tool_figma" name="tools[]" value="Figma" />
+              <label for="tool_figma">Figma</label>
+              <input type="checkbox" id="tool_mysql" name="tools[]" value="MySQL" />
+              <label for="tool_mysql">MySQL</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="about">Why should we select you?</label></td>
+            <td><textarea id="about" name="about" rows="4" cols="50" placeholder="Share a short summary"></textarea></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>Availability & Declaration</strong></legend>
+        <p>
+          <label for="hours">Weekly Availability (hours):</label>
+          <input type="number" id="hours" name="hours" min="5" max="40" required />
+        </p>
+        <p>
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">I confirm that the information provided is accurate.</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Submit Application" />
+        <input type="reset" value="Reset Form" />
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <hr />
+    <p>
+      <a href="index.html">Back</a>
+      |
+      <a href="page3.html">Next</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Singh | Portfolio</title>
+  <style>
+    :root {
+      --primary: #0f4c81;
+      --secondary: #2f80ed;
+      --bg: #eef4ff;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: radial-gradient(circle at top right, #d8e8ff, var(--bg));
+      color: var(--text);
+    }
+
+    .navbar {
+      background-color: var(--primary);
+      padding: 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 24px auto;
+      padding: 22px;
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 10px 28px rgba(14, 36, 70, 0.14);
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 20px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid #dbeafe;
+      border-radius: 12px;
+      background: linear-gradient(120deg, #f8fbff, #edf4ff);
+    }
+
+    .profile img {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      border: 4px solid var(--secondary);
+      object-fit: cover;
+      justify-self: center;
+      background: #fff;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      color: #0b3556;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      color: #0c3d66;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .card {
+      background: #f9fbff;
+      border: 1px solid #d7e8ff;
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .card ul {
+      margin: 6px 0;
+      padding-left: 18px;
+      line-height: 1.7;
+    }
+
+    .muted {
+      color: var(--muted);
+      margin: 8px 0 0;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .btn {
+      border: none;
+      padding: 11px 15px;
+      border-radius: 8px;
+      background: var(--secondary);
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #1f6fd8;
+    }
+
+    .footer-note {
+      margin-top: 14px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .section-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+    <a href="page4.html">Page 4</a>
+    <a href="page5.php">Page 5</a>
+  </nav>
+
+  <main class="container">
+    <h1>Personal Portfolio</h1>
+
+    <section class="profile">
+      <img src="images/profile.png" alt="Harsh Singh" />
+      <div>
+        <h2 style="margin: 0;">Harsh Singh</h2>
+        <p style="margin-top: 8px; color: #334155; font-size: 17px;">
+          Chapter Lead - ICP Crewsphere | Hackathon & Ideathon Winner | Co-Head @ Drobotics Lab | App Developer
+        </p>
+        <p class="muted">Lucknow, Uttar Pradesh, India | B.Tech IT '28 @ JUIT</p>
+        <p class="muted">
+          Phone: <a href="tel:9260951078">9260951078</a> | Email:
+          <a href="mailto:theharshsingh23@gmail.com">theharshsingh23@gmail.com</a> | LinkedIn:
+          <a href="https://www.linkedin.com/in/theharshsingh/" target="_blank" rel="noopener">linkedin.com/in/theharshsingh</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <h2>Summary</h2>
+        <p>
+          Building tomorrow's tech today through AI, full-stack innovation, and hardware prototyping. A
+          purpose-driven engineer, 7x hackathon and ideathon winner, and community builder.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Focus Areas</h2>
+        <ul>
+          <li>Artificial Intelligence / ML</li>
+          <li>Cross-platform app development (Flutter)</li>
+          <li>Industrial automation (Arduino, 3D printing)</li>
+          <li>Hardware prototyping and embedded systems</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Featured Projects</h2>
+        <ul>
+          <li>AI-powered labor solutions: Flutter apps connecting workers to opportunities</li>
+          <li>Smart industrial tools: 3D-printed Arduino prototypes reducing costs by 40%</li>
+          <li>Sanskrit-tech interface: bridging ancient language with modern AI</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Leadership & Experience</h2>
+        <ul>
+          <li>Co-Head, Drobotics Lab JUIT (Jan 2026 - Present)</li>
+          <li>Chapter Lead, ICP Hub India - Crewsphere JUIT (Aug 2025 - Present)</li>
+          <li>Director of Volunteers, NSS JUIT (Aug 2025 - Present)</li>
+          <li>App Dev Lead, IEEE JUIT; Lead Application Developer, SIAM JUIT</li>
+          <li>R&D Intern, VEND-COMPOST Project (Mar 2025 - Present)</li>
+          <li>Software & Hardware Intern, Kanpur Fertilizers & Cement (Jan - Mar 2025)</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Education</h2>
+        <ul>
+          <li>Jaypee University of Information Technology, Waknaghat - B.Tech IT (2024 - 2028)</li>
+          <li>Kendriya Vidyalaya - Science Stream (PCM)</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Skills & Languages</h2>
+        <ul>
+          <li>Top skills: Android Studio, Flutter, Application Development</li>
+          <li>Programming: C/C++, Python, Java, Kotlin</li>
+          <li>Languages: Bhojpuri, Hindi, English, Sanskrit, French</li>
+        </ul>
+      </article>
+    </section>
+
+
+    <div class="controls">
+      <button class="btn" onclick="showWelcome()">Show Welcome Message</button>
+      <a class="btn" href="index.html">Back</a>
+      <a class="btn" href="page2.html">Next</a>
+    </div>
+  </main>
+
+  <script>
+    function showWelcome() {
+      alert("Welcome! Explore all pages to see HTML, CSS, JS and PHP mini apps.");
+    }
+  </script>
+</body>
+</html>
